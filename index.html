@@ -120,6 +120,8 @@
     <div>
       <button onclick="MyGameInstance.SendMessage('Sphere', 'ScaleUp');">ScaleUp</button>
       <button onclick="MyGameInstance.SendMessage('Sphere', 'ScaleDown');">ScaleDown</button>
+      <input type="text" id="input" value="Message" />
+      <button onclick="MyGameInstance.SendMessage('CanvasSiteText', 'ChangeTextTo', document.getElementById('input').value);">Send Message</button>
     </div>
   </body>
 </html>
