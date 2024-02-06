@@ -23,7 +23,14 @@
         <div id="unity-build-title">SocketUnity</div>
       </div>
     </div>
+    <p id="testText">Test</p>
     <script>
+
+      function setTestText(text) {
+        document.getElementById('testText').innerText = text;
+      }
+
+
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
       var loadingBar = document.querySelector("#unity-loading-bar");
